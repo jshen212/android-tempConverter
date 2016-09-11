@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     double intEditText = Double.parseDouble(editTextVal);
                     double convertedVal = convertToCelsius(intEditText);
                     String stringResult = String.valueOf(round.format(convertedVal));
-                    showTempTextView.setText(stringResult);
+                    showTempTextView.setText(stringResult + " C");
                 }
             }
         });
@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     double intEditText= Double.parseDouble(editTextVal);
                     double convertedVal = convertToFahr(intEditText);
+                    String stringResult = String.valueOf(round.format(convertedVal));
+                    showTempTextView.setText(stringResult + " F");
                 }
             }
         });
